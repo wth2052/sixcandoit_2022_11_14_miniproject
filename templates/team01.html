@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+     <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- css -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <!-- 폰트 -->
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR&family=Song+Myung&display=swap" rel="stylesheet">
+    <h1><title>6 CAN DO IT! 개인 페이지</title></h1>
+
+
+
+    <!-- 모달창 Bootstrap -->
+
+     <button class="modal_button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">모달창 테스트</button>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">모달 제목</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="box1">
+               <img id="profile-picture" src="/static/img/leader-size.png"  class="rounded float-left" alt="leader image" >
+              <div class="introduction">
+                <h3>안녕하세요</h3>
+                <p>조장입니다</p></div>
+
+          </div>
+            <div class="box2">
+                <div class="advantage">
+            <h2>객관적으로 살펴본 자신의 장점</h2>
+            <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+            </div>
+                </div>
+            <div class="box3">
+                <div class="collaboration">
+                <h2>협업을 하는 과정에서의 자신의 스타일</h2>
+                <p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ</p>
+
+            </div>
+            </div>
+          <div class="box4">
+                 <div class="guestbook">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" placeholder="url">
+            <label for="floatingInput">닉네임</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="comment"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">응원댓글</label>
+        </div>
+        <button onclick="save_comment()" type="button" class="btn btn-dark">응원댓글 남기기</button>
+            <div class="guestbookcards" id="comment-list">
+
+    </div>
+    </div>
+
+          </div>
+
+
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">확인</button>
+          <!-- 모달창 끝 -->
+      </div>
+    </div>
+  </div>
+</div>
+
+</head>
+  <script src="{{ url_for('static', filename='js/script.js') }}" > </script>
+</html>

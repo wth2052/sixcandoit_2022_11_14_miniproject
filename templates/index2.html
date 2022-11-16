@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+     <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- css -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <!-- 폰트 -->
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR&family=Song+Myung&display=swap" rel="stylesheet">
+    <h1><title>6 CAN DO IT!</title></h1>
+    <!-- flask static read js -->
+
+
+</head>
+<body>
+    <div class="mypic">
+        <p id="mytitle">개발의 'ㄱ'자도 몰라? </br> 야, 너두..? </br> 야, 나두!</p>
+    </div>
+        <div class="mypic123456">
+        <span lang="en"><h1>6 CAN DO IT!</h1></span>
+        <span lang="en"><h2>YOU CAN DO IT!</h2></span>
+
+        <h2><p id="clock">00:00:00</p></h2>
+        <h2><p>현재기온: <span id="temp"></span>도</p></h2>
+    </div>
+    <div class="mytitle2">
+        <p>괜찮아, (검색만 할 줄 알면) 할 수 있어!</p>
+        <p id="byteam">- 6 Can Do It - <br> (Node.js A반 6조)</p>
+    </div>
+    <div class="teamintro">
+        <p>'검색만 할 줄 알면 코딩할 수 있다'는<br>무한 긍정으로 도전하는 팀<br>6 Can Do It입니다.</p>
+    </div>
+    <div class="teampromise">
+        6 Can Do It 은
+        <span id="promiselist"><li>(시간은 금) 지각하지 않습니다.</li>
+        <li>(신뢰가 전부) 거짓말하지 않습니다.</li>
+        <li>(우리는 하나) 다른 사람을 비난하지 않습니다.</li>
+        <li>(무한 긍정) 항상 웃음을 잃지 않습니다.</li>
+        <li>(체력 튼튼) 밥을 거르지 않습니다.</li>
+        <li>(거북목 방지) 스트레칭을 생활화합니다.</li></span>
+    </div>
+    <div class="memberlist">
+        6 Can Do It 멤버들을 소개합니다!
+    </div>
+
+
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                   <img src="/static/img/photo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">황민주</h5>
+                        <p class="card-text">뼈문과생의 희망이 되고 싶다!</p>
+                        <button type="button" class="btn btn-primary" id="modal_btn">자세히 보기</button>
+                        <div class="black_bg">
+                        <div class="modal_wrap">
+                            <div class="modal_close"><span>close</span></div>
+                            <div>
+                                bootstrap 모달창으로 바꾸고 싶어요...
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                   <img src="/static/img/photo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">황민주</h5>
+                        <p class="card-text">뼈문과생의 희망이 되고 싶다!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                   <img src="/static/img/photo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">황민주</h5>
+                        <p class="card-text">뼈문과생의 희망이 되고 싶다!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="mycards2">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="/static/img/photo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">황민주</h5>
+                        <p class="card-text">뼈문과생의 희망이 되고 싶다!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/static/img/photo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">황민주</h5>
+                        <p class="card-text">뼈문과생의 희망이 되고 싶다!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="teamintro">
+        <p>6 Can Do it은 이런 걸 해낼 거예요!</p>
+    </div>
+
+    <div class="mybox">
+        <div class="mybucket">
+            <input id="bucket" class="form-control" type="text" placeholder="이루고 싶은 것을 입력하세요">
+            <button onclick="save_bucket()" type="button" class="btn btn-outline-primary">기록하기</button>
+        </div>
+    </div>
+    <div class="mybox" id="bucket-list">
+    </div>
+    <!-- 모달창 Bootstrap -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">모달 제목</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        모달 내용
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">확인</button>
+          <!-- 모달창 끝 -->
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</body>
+<script src="{{ url_for('static', filename='js/script.js') }}" > </script>
+
+</html>
