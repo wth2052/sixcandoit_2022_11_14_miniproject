@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style_한동주.css">
+    <!-- 폰트 -->
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR&family=Song+Myung&display=swap"
+          rel="stylesheet">
+    <h1><title>6 CAN DO IT! 개인 페이지</title></h1>
+    <!-- 모달창 Bootstrap -->
+    <button class="modal_button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">모달창 테스트</button>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="staticBackdropLabel">6 CAN DO IT! <br>FROM 체대생 TO 개발자 </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="img03"><img height="400px" src="../static/img/한동주_사진1.jpg"></p>
+                    <div class="contents03">
+                        <p><span style="font-weight: bold">이름 :</span> 한동주</p>
+                        <p><span style="font-weight: bold">목표 :</span> 멋진 개발자 되기</p>
+                        <p><span style="font-weight: bold">MBTI :</span> ESTJ (엄격한 관리자?)</p>
+                        <p><span style="font-weight: bold">블로그 :</span> <a href="https://velog.io/@dongjooyoung"
+                                                                           target="_blank">방문하기</a></p>
+                    </div>
+                </div>
+                <div class="strength03">
+                    <h3>"객관적으로 살펴본 자신의 장점"</h3>
+                    <li>
+                        감정기복이 크지않음
+                    </li>
+                    <li>
+                        낯을 좀 가리지만 사람을 좋아함
+                    </li>
+                    <li>
+                        옳다고 생각한 일이라면 최선을 다함
+                    </li>
+                </div>
+                <div class="mystyle03">
+                    <h3>"협업을 하는 과정에서의 자신의 스타일"</h3>
+                    <li>
+                        상황에 맞는, 더 효율적인 방법을 찾기위해 노력함
+                    </li>
+                    <li>
+                        의견 조율에 진심임..(다툼 싫어, 양보 좋아)
+                    </li>
+                    <li>
+                        탓하지 않음 (삽질에도 진심)
+                    </li>
+                </div>
+                <div class="last03">
+                    <h3>"마무리 한마디"</h3>
+                    <p>우리집 막둥이 감자보러 올래?
+                        <a href="https://www.instagram.com/hanpotatochip/" target="_blank">감자 인스타 보러가기</a>
+                    </p>
+                </div>
+                <div class="letter03">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">닉네임</label>
+                        <input id="name" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">방명록 내용</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                    <button onclick="save_order()" type="button" class="btn btn-outline-dark">남기기</button>
+                </div>
+                <div id="book_list" class="answer03">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                    <!-- 모달창 끝 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type=text/javascript src="/static/js/script.js"></script>
+</html>
